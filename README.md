@@ -19,3 +19,12 @@ Vehicle weight also shows a correlation with MPG, however, at a much reduced sig
 The slope of the linear model is not 0, as none of the variable slopes (everything in the 'Estimate' column except (Intercept) are 0.
 
 The linear model effectively predicts MPG: R = .826, indicating a strong positive correlation. The Adjusted R<sup>2</sup> = .06825, indicating that 68.25% of the variation in MPG can be explained by the variation in the variables used.
+
+
+## Summary Statistics on Suspension Coils
+
+After reading in the Suspension_Coil.csv, I wrote the code below to create a summary table for the mean, median, variance, and standard deviation of cars manufactured in all lots. 
+
+```
+total_summary <- Suspension_Coil %>% summarize (Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))#create summary table
+```
