@@ -29,4 +29,13 @@ After reading in the Suspension_Coil.csv, I wrote the code below to create a sum
 total_summary <- Suspension_Coil %>% summarize (Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))#create summary table
 ```
 This resulted in the summary table below: 
+
 ![total_summary.PNG](Resources/total_summary.PNG)
+
+After that, I used the following code to produce a summary table broken down by production lot: 
+
+```
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize (Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
+```
+
+![lot_summary.PNG](Resources/lot_summary.PNG)
