@@ -11,3 +11,5 @@ summary(lm(mpg~vehicle_length + vehicle_weight + spoiler_angle + ground_clearanc
 This yielded the summary table below: 
 
 ![del_1_printout.PNG](Resources/del_1_printout.PNG)
+
+The analysis shows three variables that are clearly connected to MPG, all being significant at the 5σ-level, p = 3×10<sup>-7</sup>. T-values this high show an extremely strong statistical correlation: we would only expect these results to occur by random chance one in 3.5 million times.
