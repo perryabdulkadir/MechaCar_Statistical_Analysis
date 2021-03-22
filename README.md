@@ -85,6 +85,6 @@ Currently, the MSRP for both of our flagship models is $28,000. Because the popu
 
 Once surveyors have collected a sufficient sample of sticker prices from both companies, we will run a two-sample t-test to see if the sample means of the prices are different at a statistically significant level. The null hypothesis will be: 
 
-```
- h<sub>0</sub>: there is no statistically significant difference in mean price of the MechaCar's flagship car sample and the mean price of the Otto's Autos flagship car sample.
- ```
+
+**h<sub>0</sub>: there is no statistically significant difference in mean price of the MechaCar's flagship car sample and the mean price of the Otto's Autos flagship car sample.**
+ 
