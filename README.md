@@ -39,3 +39,5 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize (Me
 ```
 
 ![lot_summary.PNG](Resources/lot_summary.PNG)
+
+With a variance of 62.29 across all lots, the cars do meet the manufacturer specifications; variance may not exceed 100.00. However, this is misleading. When broken out by lot, it reveals insignificant variance in lot 1 (0.98), more but still acceptable variance in lot 2 (7.47), and variance well beyond the manufacturer's specifications in lot 3 (170.29).
