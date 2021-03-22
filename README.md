@@ -41,3 +41,26 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize (Me
 ![lot_summary.PNG](Resources/lot_summary.PNG)
 
 With a variance of 62.29 across all lots, the cars do meet the manufacturer specifications; variance may not exceed 100.00. However, this is misleading. When broken out by lot, it reveals insignificant variance in lot 1 (0.98), more but still acceptable variance in lot 2 (7.47), and variance well beyond the manufacturer's specifications in lot 3 (170.29).
+
+## T-Tests on Suspension Coils
+
+In order to dermine if suspension coils were being produced to specification, I conducted a one sample t-test on all suspension coils produced across all lots to determine if their mean PSI is statistically significantly different from the population mean of 1500 PSI. To do that, I used this code: 
+
+```
+t.test((Suspension_Coil$PSI), mu=1500)
+```
+
+![total_psi_t-test.PNG](Resources/total_psi_t-test.PNG)
+
+With a p-value of .06028, the t-test just barely fails the significance test at the p = .05 level. This indicates that there is insufficient evidence to show that the mean PSI of the sample is different from the mean of the population PSI. 
+
+Following this, I wrote code to conduct three more one sample t-tests on each of the different lots individually. As an example, my code for lot 1 is below: 
+
+```
+lot1 <- Suspension_Coil[Suspension_Coil$Manufacturing_Lot == 'Lot1',]
+t.test((lot1$PSI), mu=1500)
+```
+
+
+
+
