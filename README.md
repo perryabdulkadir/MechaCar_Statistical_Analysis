@@ -61,6 +61,18 @@ lot1 <- Suspension_Coil[Suspension_Coil$Manufacturing_Lot == 'Lot1',]
 t.test((lot1$PSI), mu=1500)
 ```
 
+This yielded the following t-test result for lot 1: 
 
+![lot1_psi_t-test.PNG](Resources/lot1_psi_t-test.PNG)
 
+With a p-value of 1, this indicates there is no statistically significant difference between the sample mean of lot 1 and the population mean of 1500 PSI. Of course, this makes sense as the sample mean is identical to the population mean in this case. 
 
+The results for lot 2 are below. While this time, the sample mean is different from the population mean, with a p-value of .6072, there is no statistically significant evidence to reject the null hypothesis. 
+
+![lot2_psi_t-test.PNG](Resources/lot2_psi_t-test.PNG)
+
+Lastly, the results for lot 3 are below. In this case, the sample mean of 1496.14 is statistically significantly different from the population mean at the p = .05 level with a p-value of .04168.
+
+![lot3_psi_t-test.PNG](Resources/lot3_psi_t-test.PNG)
+
+This is another example that looking at the whole data set may obfuscate certain trends that are revealed once data is broken out into subcategories: the summary statistics of the suspension coils and the t-tests of the suspension coils both confirm that lots 1 and 2 have been manufactured up to specification, while lot 3 has not been.
