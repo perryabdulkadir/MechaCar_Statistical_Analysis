@@ -10,6 +10,7 @@ After that, I finished up by creating a summary of an experimental design that m
 
 ## Resources
 Software: R 4.04
+
 Data: MechaCar_mpg.csv, Suspension_Coil.csv
 
 ## Linear Regression to Predict MPG
