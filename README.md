@@ -1,6 +1,16 @@
 # MechaCar Statistical Analysis
 Columbia Data Science Module 15
 
+## Overview
+In this project, I have used R Studio to analyze manufacturing data for MechaCar. I analyzed: 
+1) which features of car design influence average mileage per gallon; 
+2) whether suspension coils across three production lots were produced to specifications.
+
+After that, I finished up by creating a summary of an experimental design that may be used to determine the average sticker price of MechaCar's vehicles compared to their largest competitor's.
+
+## Resources
+Software: R 4.04
+Data: MechaCar_mpg.csv, Suspension_Coil.csv
 
 ## Linear Regression to Predict MPG
 After reading the .csv into R, I used the code below to run a linear regression on vehicle_length, vehicle_weight, spoiler_angle, ground_clearance, and AWD to see which variables help predict MPG. 
