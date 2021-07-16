@@ -99,3 +99,12 @@ Once surveyors have collected a sufficient sample of sticker prices from both co
 
 **h<sub>0</sub>: there is no statistically significant difference in mean price of the MechaCar's flagship car sample and the mean price of the Otto's Autos' flagship car sample.**
  
+
+
+-----
+
+### **Contact:**
+
+**Email:** perry.abdulkadir@alumni.harvard.edu
+
+**Linkedin:** https://www.linkedin.com/in/perry-abdulkadir-6a255199/
