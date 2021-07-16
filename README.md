@@ -1,5 +1,5 @@
 # MechaCar Statistical Analysis
-Columbia Data Science Module 15
+Analyzing car manufacturing using R
 
 ## Overview
 In this project, I have used R Studio to analyze manufacturing data for MechaCar. I analyzed: 
