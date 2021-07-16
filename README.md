@@ -25,7 +25,7 @@ This yielded the summary table below:
 
 The analysis shows three variables that are clearly connected to MPG, all being significant at the 5σ-level, p = 3×10<sup>-7</sup>. T-values this high show an extremely strong statistical correlation: we would only expect these results to occur by random chance one in 3.5 million times.
 
-Vehicle weight also shows a correlation with MPG, however, at a much reduced significance levels compared to the aforementioned variables. Vehicle weight is only significant at the p = .1 level. Spoiler agle and AWD were not statistically significant, so any correlation with MPG may be due to randomness. 
+Vehicle weight also shows a correlation with MPG, however, at a much reduced significance level compared to the aforementioned variables. Vehicle weight is only significant at the p = .1 level. Spoiler agle and AWD were not statistically significant, so any correlation with MPG may be due to randomness. 
 
 The slope of the linear model is not 0, as none of the variable slopes (everything in the 'Estimate' column except (Intercept)) are 0.
 
@@ -55,7 +55,7 @@ With a variance of 62.29 across all lots, the cars do meet the manufacturer spec
 
 ## T-Tests on Suspension Coils
 
-In order to dermine if suspension coils were being produced to specification, I conducted a one sample t-test on all suspension coils produced across all lots to determine if their mean PSI is statistically significantly different from the population mean of 1500 PSI. To do that, I used this code: 
+In order to determine if suspension coils were being produced to specification, I conducted a one sample t-test on all suspension coils produced across all lots to determine if their mean PSI is statistically significantly different from the population mean of 1500 PSI. To do that, I used this code: 
 
 ```
 t.test((Suspension_Coil$PSI), mu=1500)
@@ -90,7 +90,7 @@ This is another example that looking at the whole data set may obfuscate certain
 
 ## Study Design: MechaCar vs Competition
 
-In order to better understand our market position, we should conduct a study to test our pricing relative to our largest competitor: Otto's Autos. Both of our companies have publicly available MSRPs for our cars. However, in practice, dealership often sell cars at levels different from the MSRP. Testing the actual sale price of both of our companies' cars would allow us to ensure our pricing remains competitive. For example, if it appears our cars are on average being sold at a higher cost than our competitor's cars, we may consider reducing our MSRP and/or reducing our wholesale price to dealers in order to lower the sticker price seen by consumers. 
+In order to better understand our market position, we should conduct a study to test our pricing relative to our largest competitor: Otto's Autos. Both of our companies have publicly available MSRPs for our cars. However, in practice, dealerships often sell cars at levels different from the MSRP. Testing the actual sale price of both of our companies' cars would allow us to ensure our pricing remains competitive. For example, if it appears our cars are on average being sold at a higher cost than our competitor's cars, we may consider reducing our MSRP and/or reducing our wholesale price to dealers in order to lower the sticker price seen by consumers. 
 
 Currently, the MSRP for both of our flagship models is $28,000. Because the population price is unknown to us, both for our own cars and our competitor's cars, we will need to collect a sample of pricing for both companies and conduct a two-sample t-test. In order to collect the pricing data, we will need to ensure that data is collected in an unbiased way. While a simple random sample of dealerships around the country could work if our sample size were large enough, conducting a survey that large may be prohibitively expensive as we will need to hire people to physically go to dealerships and check sales prices. If we cannot afford a sufficiently large sample, we should ensure that an equal number of dealerships are sampled from each major metro area. Because geography is one of the largest determinants of car pricing variation, by randomly sampling a certain number of dealerships in each major metro area we can avoid sampling bias that could occur if one company's samples were disproportionately taken from high cost of living areas.
 
