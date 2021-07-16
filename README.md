@@ -11,7 +11,7 @@ After that, I finished up by creating a summary of an experimental design that m
 ## Resources
 Software: R 4.04
 
-Data: MechaCar_mpg.csv, Suspension_Coil.csv
+[Data:](https://github.com/perryabdulkadir/MechaCar_Statistical_Analysis/tree/main/Resources/Raw%20Data) MechaCar_mpg.csv, Suspension_Coil.csv
 
 ## Linear Regression to Predict MPG
 After reading the .csv into R, I used the code below to run a linear regression on vehicle_length, vehicle_weight, spoiler_angle, ground_clearance, and AWD to see which variables help predict MPG. 
