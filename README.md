@@ -29,7 +29,7 @@ Vehicle weight also shows a correlation with MPG, however, at a much reduced sig
 
 The slope of the linear model is not 0, as none of the variable slopes (everything in the 'Estimate' column except (Intercept)) are 0.
 
-The linear model effectively predicts MPG: R = .826, indicating a strong positive correlation. The Adjusted R<sup>2</sup> = .06825, indicating that 68.25% of the variation in MPG can be explained by the variation in the variables used.
+The linear model effectively predicts MPG: R = .826, indicating a strong positive correlation. The Adjusted R<sup>2</sup> = .6825, indicating that 68.25% of the variation in MPG can be explained by the variation in the variables used.
 
 
 ## Summary Statistics on Suspension Coils
